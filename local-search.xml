@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>学习汇总｜Hexo博客更新流程</title>
+    <link href="/2022/09/09/Learning-03/"/>
+    <url>/2022/09/09/Learning-03/</url>
+    
+    <content type="html"><![CDATA[<h1 id="学习汇总｜Hexo博客更新流程"><a href="#学习汇总｜Hexo博客更新流程" class="headerlink" title="学习汇总｜Hexo博客更新流程"></a>学习汇总｜Hexo博客更新流程</h1><h3 id="1-sudo-su"><a href="#1-sudo-su" class="headerlink" title="1. sudo su"></a>1. sudo su</h3><ul><li>切换至Terminal</li><li>切换至博客所在文件夹</li><li>切换至root用户：sudo su</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo su <br></code></pre></td></tr></table></figure><h3 id="2-hexo-clean"><a href="#2-hexo-clean" class="headerlink" title="2. hexo clean"></a>2. hexo clean</h3><ul><li>清除博客缓存（非必要）</li><li>hexo clean</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean<br></code></pre></td></tr></table></figure><h3 id="3-hexo-new"><a href="#3-hexo-new" class="headerlink" title="3. hexo new"></a>3. hexo new</h3><ul><li>创建新文章</li><li>hexo new [name]</li><li>简写：hexo n</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo n &quot;name&quot;<br></code></pre></td></tr></table></figure><h3 id="4-文章编写"><a href="#4-文章编写" class="headerlink" title="4. 文章编写"></a>4. 文章编写</h3><ul><li>找到文章所在文件夹</li><li>[博客文件夹]-&gt;[source]-&gt;[_posts]</li><li>打开新文章（.md文件）进行编写</li></ul><h3 id="5-hexo-generate"><a href="#5-hexo-generate" class="headerlink" title="5. hexo generate"></a>5. hexo generate</h3><ul><li>生成静态文件</li><li>hexo generate</li><li>简写：hexo g</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo g<br></code></pre></td></tr></table></figure><h3 id="6-hexo-server"><a href="#6-hexo-server" class="headerlink" title="6. hexo server"></a>6. hexo server</h3><ul><li>启动本地服务器</li><li>hexo server</li><li>简写：hexo s</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo s<br></code></pre></td></tr></table></figure><h3 id="7-预览效果"><a href="#7-预览效果" class="headerlink" title="7. 预览效果"></a>7. 预览效果</h3><ul><li>浏览器打开默认端口：<a href="http://localhost:4000/">http://localhost:4000/</a> </li><li>预览效果</li></ul><h3 id="8-Ctrl-C"><a href="#8-Ctrl-C" class="headerlink" title="8. Ctrl+C"></a>8. Ctrl+C</h3><ul><li>停止本地服务器</li><li>Ctrl+C</li></ul><h3 id="9-hexo-deploy"><a href="#9-hexo-deploy" class="headerlink" title="9. hexo deploy"></a>9. hexo deploy</h3><ul><li>将博客部署至远端服务器（如Github）</li><li>hexo deploy</li><li>hexo d</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo d<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>学习汇总｜Java講座-笔记01</title>
+    <link href="/2022/09/09/Learning-02/"/>
+    <url>/2022/09/09/Learning-02/</url>
+    
+    <content type="html"><![CDATA[<h1 id="学习汇总｜Java講座-笔记01"><a href="#学习汇总｜Java講座-笔记01" class="headerlink" title="学习汇总｜Java講座-笔记01"></a>学习汇总｜Java講座-笔记01</h1><h2 id="変数"><a href="#変数" class="headerlink" title="変数"></a>変数</h2><ul><li><p>変数はデータの入れ物</p></li><li><p>変数名のルール</p><ul><li>１文字目：a-z&#x2F;A-Z&#x2F;_&#x2F;$</li><li>２文字目以降：数字可</li><li>キーワードは使えない：public&#x2F;static&#x2F;void</li></ul></li></ul><h2 id="変数の使い方"><a href="#変数の使い方" class="headerlink" title="変数の使い方"></a>変数の使い方</h2><ul><li><p>宣言する：変数を作る（せんげん）</p><ul><li>データ型　変数名　セミコロン</li><li>int month ;</li></ul></li><li><p>代入する：値を入れる（あたい）</p><ul><li>変数名 &#x3D; 値</li><li>month &#x3D; 10</li><li>&#x3D;&#x2F;equal&#x2F;イコール</li><li>右の値を左の変数名に格納される</li></ul></li><li><p>参照する：値を見る（さんしょう）</p><ul><li>プログラムの中で変数名を書く</li></ul></li><li><p>初期化する：宣言する＋代入する</p><ul><li>int age &#x3D; 20 ;</li></ul></li><li><p>バリアブル・variable・可変・かへん</p></li><li><p>コンパイル・compile</p></li><li><p>ダブルクォーテーション（quotation）(“)</p></li></ul><h2 id="基本データ型"><a href="#基本データ型" class="headerlink" title="基本データ型"></a>基本データ型</h2><ul><li><p>整数</p><ul><li>byte：８ビット &#x2F; ８桁の０と１を使って数値を表すデータ型（あらわす） </li><li>short</li><li>int</li><li>long</li></ul></li><li><p>小数</p><ul><li>float</li><li>double</li></ul></li><li><p>文字</p><ul><li>char</li></ul></li><li><p>真偽値・しんぎち</p><ul><li>boolean</li></ul></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>学习汇总｜Java学习路线</title>
     <link href="/2022/09/02/Learning-01/"/>
     <url>/2022/09/02/Learning-01/</url>

@@ -16,22 +16,22 @@
   <meta name="author" content="Xiao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Weekly 01｜开始兜兜转转好几年，在这个热得仿佛要将一切融化的夏天，终于想通了一些事情。   决心努力重新拾起编程这条路径；虽然看着那条漫长到压根没边的Java学习之路，心里满是畏惧与无力——「自己这猪脑子咋能造火箭啊？！」   但这次——真的想再试一次。   一想到小波在遥远的九十年代也曾进入到「编程」的繁复世界，似乎，这条对自己而言曲折的道路也有了一丝浪漫色彩。   九月一号——在这个具">
+    <meta name="description" content="学习汇总｜Java講座-笔记01変数 変数はデータの入れ物  変数名のルール  １文字目：a-z&#x2F;A-Z&#x2F;_&#x2F;$ ２文字目以降：数字可 キーワードは使えない：public&#x2F;static&#x2F;void    変数の使い方 宣言する：変数を作る（せんげん）  データ型　変数名　セミコロン int month ;   代入する：値を入れる（あたい）  変数名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Weekly 01｜开始">
-<meta property="og:url" content="http://xiaoblog.site/2022/09/01/Weekly-01/index.html">
+<meta property="og:title" content="学习汇总｜Java講座-笔记01">
+<meta property="og:url" content="http://xiaoblog.site/2022/09/09/Learning-02/index.html">
 <meta property="og:site_name" content="Xiao Blog">
-<meta property="og:description" content="Weekly 01｜开始兜兜转转好几年，在这个热得仿佛要将一切融化的夏天，终于想通了一些事情。   决心努力重新拾起编程这条路径；虽然看着那条漫长到压根没边的Java学习之路，心里满是畏惧与无力——「自己这猪脑子咋能造火箭啊？！」   但这次——真的想再试一次。   一想到小波在遥远的九十年代也曾进入到「编程」的繁复世界，似乎，这条对自己而言曲折的道路也有了一丝浪漫色彩。   九月一号——在这个具">
+<meta property="og:description" content="学习汇总｜Java講座-笔记01変数 変数はデータの入れ物  変数名のルール  １文字目：a-z&#x2F;A-Z&#x2F;_&#x2F;$ ２文字目以降：数字可 キーワードは使えない：public&#x2F;static&#x2F;void    変数の使い方 宣言する：変数を作る（せんげん）  データ型　変数名　セミコロン int month ;   代入する：値を入れる（あたい）  変数名">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-01T14:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-01T13:24:35.414Z">
+<meta property="article:published_time" content="2022-09-09T14:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-22T03:00:09.647Z">
 <meta property="article:author" content="Xiao">
-<meta property="article:tag" content="Weekly">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Weekly 01｜开始 - Xiao Blog</title>
+  <title>学习汇总｜Java講座-笔记01 - Xiao Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Weekly 01｜开始"></span>
+            <span id="subtitle" data-typed-text="学习汇总｜Java講座-笔记01"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-01 22:00" pubdate>
-          September 1, 2022 pm
+        <time datetime="2022-09-09 22:00" pubdate>
+          September 9, 2022 pm
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          265 words
+          451 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          3 mins
+          4 mins
         
       </span>
     
@@ -268,18 +268,80 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Weekly 01｜开始</h1>
+            <h1 style="display: none">学习汇总｜Java講座-笔记01</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Weekly-01｜开始"><a href="#Weekly-01｜开始" class="headerlink" title="Weekly 01｜开始"></a>Weekly 01｜开始</h1><p>兜兜转转好几年，在这个热得仿佛要将一切融化的夏天，终于想通了一些事情。  </p>
-<p>决心努力重新拾起编程这条路径；虽然看着那条漫长到压根没边的Java学习之路，心里满是畏惧与无力——「自己这猪脑子咋能造火箭啊？！」  </p>
-<p>但这次——真的想再试一次。  </p>
-<p>一想到小波在遥远的九十年代也曾进入到「编程」的繁复世界，似乎，这条对自己而言曲折的道路也有了一丝浪漫色彩。  </p>
-<p>九月一号——在这个具有学生时代的「全新开始」意味的日子，用VSCode和Markdown格式写下第一篇Weekly，貌似是一次傻兮兮的谋生宣言。  </p>
-<p>向前吧。活下去。  </p>
-<p>夏天已经结束了。</p>
+                <h1 id="学习汇总｜Java講座-笔记01"><a href="#学习汇总｜Java講座-笔记01" class="headerlink" title="学习汇总｜Java講座-笔记01"></a>学习汇总｜Java講座-笔记01</h1><h2 id="変数"><a href="#変数" class="headerlink" title="変数"></a>変数</h2><ul>
+<li><p>変数はデータの入れ物</p>
+</li>
+<li><p>変数名のルール</p>
+<ul>
+<li>１文字目：a-z&#x2F;A-Z&#x2F;_&#x2F;$</li>
+<li>２文字目以降：数字可</li>
+<li>キーワードは使えない：public&#x2F;static&#x2F;void</li>
+</ul>
+</li>
+</ul>
+<h2 id="変数の使い方"><a href="#変数の使い方" class="headerlink" title="変数の使い方"></a>変数の使い方</h2><ul>
+<li><p>宣言する：変数を作る（せんげん）</p>
+<ul>
+<li>データ型　変数名　セミコロン</li>
+<li>int month ;</li>
+</ul>
+</li>
+<li><p>代入する：値を入れる（あたい）</p>
+<ul>
+<li>変数名 &#x3D; 値</li>
+<li>month &#x3D; 10</li>
+<li>&#x3D;&#x2F;equal&#x2F;イコール</li>
+<li>右の値を左の変数名に格納される</li>
+</ul>
+</li>
+<li><p>参照する：値を見る（さんしょう）</p>
+<ul>
+<li>プログラムの中で変数名を書く</li>
+</ul>
+</li>
+<li><p>初期化する：宣言する＋代入する</p>
+<ul>
+<li>int age &#x3D; 20 ;</li>
+</ul>
+</li>
+<li><p>バリアブル・variable・可変・かへん</p>
+</li>
+<li><p>コンパイル・compile</p>
+</li>
+<li><p>ダブルクォーテーション（quotation）(“)</p>
+</li>
+</ul>
+<h2 id="基本データ型"><a href="#基本データ型" class="headerlink" title="基本データ型"></a>基本データ型</h2><ul>
+<li><p>整数</p>
+<ul>
+<li>byte：８ビット &#x2F; ８桁の０と１を使って数値を表すデータ型（あらわす） </li>
+<li>short</li>
+<li>int</li>
+<li>long</li>
+</ul>
+</li>
+<li><p>小数</p>
+<ul>
+<li>float</li>
+<li>double</li>
+</ul>
+</li>
+<li><p>文字</p>
+<ul>
+<li>char</li>
+</ul>
+</li>
+<li><p>真偽値・しんぎち</p>
+<ul>
+<li>boolean</li>
+</ul>
+</li>
+</ul>
 
                 
               </div>
@@ -298,7 +360,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Weekly/" class="category-chain-item">Weekly</a>
+  <a href="/categories/Learning/" class="category-chain-item">Learning</a>
   
   
 
@@ -313,7 +375,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Weekly/">#Weekly</a>
+        <a href="/tags/Java/">#Java</a>
       
     </div>
   
@@ -325,8 +387,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Weekly 01｜开始</div>
-      <div>http://xiaoblog.site/2022/09/01/Weekly-01/</div>
+      <div>学习汇总｜Java講座-笔记01</div>
+      <div>http://xiaoblog.site/2022/09/09/Learning-02/</div>
     </div>
     <div class="license-meta">
       
@@ -338,7 +400,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 1, 2022</div>
+          <div>September 9, 2022</div>
         </div>
       
       
@@ -380,15 +442,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/02/Learning-01/" title="学习汇总｜Java学习路线">
+                      <a href="/2022/09/09/Learning-03/" title="学习汇总｜Hexo博客更新流程">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">学习汇总｜Java学习路线</span>
+                        <span class="hidden-mobile">学习汇总｜Hexo博客更新流程</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/09/02/Learning-01/" title="学习汇总｜Java学习路线">
+                        <span class="hidden-mobile">学习汇总｜Java学习路线</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
