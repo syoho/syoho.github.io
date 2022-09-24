@@ -16,22 +16,23 @@
   <meta name="author" content="Xiao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="学习汇总｜Java講座-笔记02参照型1String name &#x3D; &quot;Name&quot;;  参照型（さんしょうがた） データ型：基本データ型・参照型 データ自体はメモリ上の別の場所で置く データのアドレスの値（参照値）が変数に入る Name-&gt;A0001（保存） name&lt;-A0001（格納） 基本データ型：データそのものが入る 参照型：参照値が入る  配列123int[">
+    <meta name="description" content="学习汇总｜GitHub部署React并自定义域名 过程:  1.创建React应用   2.将应用部署至GitHub Pages    3.绑定自定义的域名    参考相关视频后，步骤1与2较为顺利 但被步骤3卡了好几个小时，查询多个经验帖，均以失败告终 原本已想放弃，但最后误打误撞通过修改React项目[package.json]的[homepage]设定，得以成功绑定域名   相关视频（需科学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习汇总｜Java講座-笔记02">
-<meta property="og:url" content="http://xiaoblog.site/2022/09/16/Learning-04/index.html">
+<meta property="og:title" content="学习汇总｜GitHub部署React并自定义域名">
+<meta property="og:url" content="http://xiaoblog.site/2022/09/23/Learning-06/index.html">
 <meta property="og:site_name" content="Xiao Blog">
-<meta property="og:description" content="学习汇总｜Java講座-笔记02参照型1String name &#x3D; &quot;Name&quot;;  参照型（さんしょうがた） データ型：基本データ型・参照型 データ自体はメモリ上の別の場所で置く データのアドレスの値（参照値）が変数に入る Name-&gt;A0001（保存） name&lt;-A0001（格納） 基本データ型：データそのものが入る 参照型：参照値が入る  配列123int[">
+<meta property="og:description" content="学习汇总｜GitHub部署React并自定义域名 过程:  1.创建React应用   2.将应用部署至GitHub Pages    3.绑定自定义的域名    参考相关视频后，步骤1与2较为顺利 但被步骤3卡了好几个小时，查询多个经验帖，均以失败告终 原本已想放弃，但最后误打误撞通过修改React项目[package.json]的[homepage]设定，得以成功绑定域名   相关视频（需科学">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-16T14:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-23T00:28:34.913Z">
+<meta property="article:published_time" content="2022-09-23T14:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-24T03:47:05.703Z">
 <meta property="article:author" content="Xiao">
-<meta property="article:tag" content="Java">
+<meta property="article:tag" content="React">
+<meta property="article:tag" content="GitHub">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>学习汇总｜Java講座-笔记02 - Xiao Blog</title>
+  <title>学习汇总｜GitHub部署React并自定义域名 - Xiao Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="学习汇总｜Java講座-笔记02"></span>
+            <span id="subtitle" data-typed-text="学习汇总｜GitHub部署React并自定义域名"></span>
           
         </div>
 
@@ -207,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-16 22:00" pubdate>
-          September 16, 2022 pm
+        <time datetime="2022-09-23 22:00" pubdate>
+          September 23, 2022 pm
         </time>
       </span>
     
@@ -219,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          492 words
+          1.4k words
         
       </span>
     
@@ -230,7 +231,7 @@
         
         
         
-          5 mins
+          12 mins
         
       </span>
     
@@ -268,33 +269,87 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">学习汇总｜Java講座-笔记02</h1>
+            <h1 style="display: none">学习汇总｜GitHub部署React并自定义域名</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="学习汇总｜Java講座-笔记02"><a href="#学习汇总｜Java講座-笔记02" class="headerlink" title="学习汇总｜Java講座-笔记02"></a>学习汇总｜Java講座-笔记02</h1><h2 id="参照型"><a href="#参照型" class="headerlink" title="参照型"></a>参照型</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Name&quot;</span>;<br></code></pre></td></tr></table></figure>
+                <h1 id="学习汇总｜GitHub部署React并自定义域名"><a href="#学习汇总｜GitHub部署React并自定义域名" class="headerlink" title="学习汇总｜GitHub部署React并自定义域名"></a>学习汇总｜GitHub部署React并自定义域名</h1><blockquote>
+<p>过程:</p>
 <ul>
-<li>参照型（さんしょうがた）</li>
-<li>データ型：基本データ型・参照型</li>
-<li>データ自体はメモリ上の別の場所で置く</li>
-<li>データのアドレスの値（参照値）が変数に入る</li>
-<li>Name-&gt;A0001（保存）</li>
-<li>name&lt;-A0001（格納）</li>
-<li>基本データ型：データそのものが入る</li>
-<li>参照型：参照値が入る</li>
+<li>1.创建React应用  </li>
+<li>2.将应用部署至GitHub Pages   </li>
+<li>3.绑定自定义的域名</li>
 </ul>
-<h2 id="配列"><a href="#配列" class="headerlink" title="配列"></a>配列</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span>[] score = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">3</span>];<br>score[<span class="hljs-number">0</span>] = <span class="hljs-number">100</span>;<br>String[] name = &#123;<span class="hljs-string">&quot;Maruko&quot;</span>,<span class="hljs-string">&quot;Fujiki&quot;</span>,<span class="hljs-string">&quot;Nagasawa&quot;</span>&#125;;<br></code></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>参考相关视频后，步骤1与2较为顺利</p>
+<p>但被步骤3卡了好几个小时，查询多个经验帖，均以失败告终</p>
+<p>原本已想放弃，但最后误打误撞通过修改React项目[package.json]的[homepage]设定，得以成功绑定域名</p>
+</blockquote>
+<blockquote>
+<p>相关视频（需科学上网）：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=F8s4Ng-re0E&t=668s">How to Deploy React App to GitHub Pages</a></p>
+</blockquote>
+<h2 id="1-创建React应用"><a href="#1-创建React应用" class="headerlink" title="1.创建React应用"></a>1.创建React应用</h2><ul>
+<li><p>打开Terminal，切换至root用户</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo su<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>利用create-react-app，创建React应用（应用名自定义，此处设为：react-test）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo npm install -g create-react-app<br>create-react-app react-test<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>注：以下是<a target="_blank" rel="noopener" href="https://create-react-app.dev/docs/getting-started">Create React App官网</a>提供的创建方案，但本人的环境均未奏效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npx create-react-app react-test<br></code></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm init react-app react-test<br></code></pre></td></tr></table></figure>
+
 <ul>
-<li>データ型[] 配列名 &#x3D; new データ型　[要素数]</li>
-<li>配列の生成にはnewを使う</li>
-<li>生成時にデフォルト初期値が設定される：０;’’;false</li>
-<li>score.length：要素数を取得</li>
-<li>配列：同じデータ型の変数を複数まとめて管理するもの</li>
-<li>[0]：添字（そえじ）;０から</li>
-<li>要素数（ようそすう）</li>
-<li>[]：角括弧（角カッコ）（かくかっこ）（カクカッコ）</li>
-<li>{}：中括弧（中カッコ）（ちゅうかっこ）（チュウカッコ）</li>
+<li><p>切换至react-test文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd react-test<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>启动应用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm run start<br></code></pre></td></tr></table></figure></li>
+<li><p>在 <a target="_blank" rel="noopener" href="http://localhost:3000/">http://localhost:3000/</a> 可看到默认React页面</p>
+</li>
+</ul>
+<h2 id="2-将应用部署至GitHub-Pages"><a href="#2-将应用部署至GitHub-Pages" class="headerlink" title="2.将应用部署至GitHub Pages"></a>2.将应用部署至GitHub Pages</h2><ul>
+<li><p>在Github上创建空白Repository，此处Repository名也为：react-test</p>
+</li>
+<li><p>返回本地react-test文件夹的Terminal页面</p>
+</li>
+<li><p>安装gh-pages</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install gh-pages --save-dev<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>打开react-test工程，在[package.json]文件中的[“name”]项之上<strong>直接添加自定义域名设定</strong>，此处设定为”<a target="_blank" rel="noopener" href="http://www.reacttest.com&quot;/">www.reacttest.com&quot;</a></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;homepage&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://www.reacttest.com&quot;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure></li>
+<li><p>注：此步骤是自定义域名的关键</p>
+<ul>
+<li>网上的推荐设定多为：”<a target="_blank" rel="noopener" href="https://username.github.io/repository-name&quot;">https://username.github.io/repository-name&quot;</a></li>
+<li>此设置，可令部署后的页面在”<a target="_blank" rel="noopener" href="https://username.github.io/repository-name&quot;%E4%B8%8A%E6%98%BE%E7%A4%BA">https://username.github.io/repository-name&quot;上显示</a></li>
+<li>但此设置无法令页面解析至自定义域名，即便之后在GitHub Pages的Custom domain处设置了自定义域名，也无法实现</li>
+<li>这个步骤错误直接导致了本人之后操作自定义域名的重重问题</li>
+</ul>
+</li>
+<li><p>继续设置react-test工程的[package.json]文件；在[ “scripts”]之中添加以下设定，注意别忘记逗号</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;predeploy&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;npm run build&quot;</span><span class="hljs-punctuation">,</span> <br><span class="hljs-attr">&quot;deploy&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;gh-pages -d build&quot;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure>
+
+</li>
+<li><p>git初始化</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git init<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>连接GitHub的react-test项目</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git remote add origin https://github.com/username/react-test.git<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>添加上传文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git add .<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>commit，并添加自定义信息</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git commit -m &quot;deploy my react app&quot;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>部署</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm run deploy<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>按照界面要求输入GitHub用户名与密钥，显示[Published]即表示推送成功</p>
+</li>
 </ul>
 
                 
@@ -329,7 +384,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Java/">#Java</a>
+        <a href="/tags/React/">#React</a>
+      
+        <a href="/tags/GitHub/">#GitHub</a>
       
     </div>
   
@@ -341,8 +398,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>学习汇总｜Java講座-笔记02</div>
-      <div>http://xiaoblog.site/2022/09/16/Learning-04/</div>
+      <div>学习汇总｜GitHub部署React并自定义域名</div>
+      <div>http://xiaoblog.site/2022/09/23/Learning-06/</div>
     </div>
     <div class="license-meta">
       
@@ -354,7 +411,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 16, 2022</div>
+          <div>September 23, 2022</div>
         </div>
       
       
@@ -396,18 +453,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/17/Learning-05/" title="学习汇总｜Java講座-笔记03">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">学习汇总｜Java講座-笔记03</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/09/Learning-03/" title="学习汇总｜Hexo博客更新流程">
-                        <span class="hidden-mobile">学习汇总｜Hexo博客更新流程</span>
+                      <a href="/2022/09/17/Learning-05/" title="学习汇总｜Java講座-笔记03">
+                        <span class="hidden-mobile">学习汇总｜Java講座-笔记03</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

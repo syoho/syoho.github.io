@@ -4,6 +4,58 @@
   
   
   <entry>
+    <title>学习汇总｜GitHub部署React并自定义域名</title>
+    <link href="/2022/09/23/Learning-06/"/>
+    <url>/2022/09/23/Learning-06/</url>
+    
+    <content type="html"><![CDATA[<h1 id="学习汇总｜GitHub部署React并自定义域名"><a href="#学习汇总｜GitHub部署React并自定义域名" class="headerlink" title="学习汇总｜GitHub部署React并自定义域名"></a>学习汇总｜GitHub部署React并自定义域名</h1><blockquote><p>过程:</p><ul><li>1.创建React应用  </li><li>2.将应用部署至GitHub Pages   </li><li>3.绑定自定义的域名</li></ul></blockquote><blockquote><p>参考相关视频后，步骤1与2较为顺利</p><p>但被步骤3卡了好几个小时，查询多个经验帖，均以失败告终</p><p>原本已想放弃，但最后误打误撞通过修改React项目[package.json]的[homepage]设定，得以成功绑定域名</p></blockquote><blockquote><p>相关视频（需科学上网）：<a href="https://www.youtube.com/watch?v=F8s4Ng-re0E&t=668s">How to Deploy React App to GitHub Pages</a></p></blockquote><h2 id="1-创建React应用"><a href="#1-创建React应用" class="headerlink" title="1.创建React应用"></a>1.创建React应用</h2><ul><li><p>打开Terminal，切换至root用户</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo su<br></code></pre></td></tr></table></figure></li><li><p>利用create-react-app，创建React应用（应用名自定义，此处设为：react-test）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo npm install -g create-react-app<br>create-react-app react-test<br></code></pre></td></tr></table></figure></li><li><p>注：以下是<a href="https://create-react-app.dev/docs/getting-started">Create React App官网</a>提供的创建方案，但本人的环境均未奏效</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npx create-react-app react-test<br></code></pre></td></tr></table></figure></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm init react-app react-test<br></code></pre></td></tr></table></figure><ul><li><p>切换至react-test文件夹</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd react-test<br></code></pre></td></tr></table></figure></li><li><p>启动应用</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm run start<br></code></pre></td></tr></table></figure></li><li><p>在 <a href="http://localhost:3000/">http://localhost:3000/</a> 可看到默认React页面</p></li></ul><h2 id="2-将应用部署至GitHub-Pages"><a href="#2-将应用部署至GitHub-Pages" class="headerlink" title="2.将应用部署至GitHub Pages"></a>2.将应用部署至GitHub Pages</h2><ul><li><p>在Github上创建空白Repository，此处Repository名也为：react-test</p></li><li><p>返回本地react-test文件夹的Terminal页面</p></li><li><p>安装gh-pages</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install gh-pages --save-dev<br></code></pre></td></tr></table></figure></li><li><p>打开react-test工程，在[package.json]文件中的[“name”]项之上<strong>直接添加自定义域名设定</strong>，此处设定为”<a href="http://www.reacttest.com&quot;/">www.reacttest.com&quot;</a></p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;homepage&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;https://www.reacttest.com&quot;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure></li><li><p>注：此步骤是自定义域名的关键</p><ul><li>网上的推荐设定多为：”<a href="https://username.github.io/repository-name&quot;">https://username.github.io/repository-name&quot;</a></li><li>此设置，可令部署后的页面在”<a href="https://username.github.io/repository-name&quot;%E4%B8%8A%E6%98%BE%E7%A4%BA">https://username.github.io/repository-name&quot;上显示</a></li><li>但此设置无法令页面解析至自定义域名，即便之后在GitHub Pages的Custom domain处设置了自定义域名，也无法实现</li><li>这个步骤错误直接导致了本人之后操作自定义域名的重重问题</li></ul></li><li><p>继续设置react-test工程的[package.json]文件；在[ “scripts”]之中添加以下设定，注意别忘记逗号</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;predeploy&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;npm run build&quot;</span><span class="hljs-punctuation">,</span> <br><span class="hljs-attr">&quot;deploy&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;gh-pages -d build&quot;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure></li><li><p>git初始化</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git init<br></code></pre></td></tr></table></figure></li><li><p>连接GitHub的react-test项目</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git remote add origin https://github.com/username/react-test.git<br></code></pre></td></tr></table></figure></li><li><p>添加上传文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git add .<br></code></pre></td></tr></table></figure></li><li><p>commit，并添加自定义信息</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">git commit -m &quot;deploy my react app&quot;<br></code></pre></td></tr></table></figure></li><li><p>部署</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm run deploy<br></code></pre></td></tr></table></figure></li><li><p>按照界面要求输入GitHub用户名与密钥，显示[Published]即表示推送成功</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>React</tag>
+      
+      <tag>GitHub</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>学习汇总｜Java講座-笔记03</title>
+    <link href="/2022/09/17/Learning-05/"/>
+    <url>/2022/09/17/Learning-05/</url>
+    
+    <content type="html"><![CDATA[<h1 id="学习汇总｜Java講座-笔记03"><a href="#学习汇总｜Java講座-笔记03" class="headerlink" title="学习汇总｜Java講座-笔记03"></a>学习汇总｜Java講座-笔记03</h1><h2 id="多次元配列"><a href="#多次元配列" class="headerlink" title="多次元配列"></a>多次元配列</h2><ul><li>多次元配列（たじげん・タジゲン）</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span>[][] allScore = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>];<br>allScore[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">10</span>;<br>allScore[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] = <span class="hljs-number">20</span>;<br></code></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span>[][] allScore = &#123;&#123;<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>&#125;,&#123;<span class="hljs-number">40</span>,<span class="hljs-number">50</span>,<span class="hljs-number">60</span>&#125;&#125;;<br></code></pre></td></tr></table></figure><ul><li>allScore.length &#x3D; 2</li><li>allScore[0].length &#x3D; 3</li><li>&#x2F; : スラッシュ・slash</li><li>＊ : アスタリスク・asterisk</li><li>囲んで・囲む・かこむ</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>学习汇总｜Java講座-笔记02</title>
     <link href="/2022/09/16/Learning-04/"/>
     <url>/2022/09/16/Learning-04/</url>
