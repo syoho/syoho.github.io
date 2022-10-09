@@ -31,6 +31,31 @@
   
   
   <entry>
+    <title>学习汇总｜Java講座-笔记04</title>
+    <link href="/2022/09/22/Learning-07/"/>
+    <url>/2022/09/22/Learning-07/</url>
+    
+    <content type="html"><![CDATA[<h1 id="学习汇总｜Java講座-笔记04"><a href="#学习汇总｜Java講座-笔记04" class="headerlink" title="学习汇总｜Java講座-笔记04"></a>学习汇总｜Java講座-笔记04</h1><h2 id="演算子"><a href="#演算子" class="headerlink" title="演算子"></a>演算子</h2><ul><li><p>演算子（えんざんし）</p></li><li><p>足し算（たしざん）</p></li><li><p>引き算（ひきざん）</p></li><li><p>かけ算（かけざん）</p><ul><li>アスタリスク</li><li>(*)</li></ul></li><li><p>割り算（わりざん）</p><ul><li>スラッシュ（&#x2F;）</li></ul></li><li><p>剰余算（じょうよざん）</p><ul><li>パーセント</li><li>％</li><li>余り（あまり）を計算</li><li>7％2＝1</li></ul></li><li><p>identifier</p><ul><li>識別子</li><li>しきべつし</li></ul></li><li><p>代入演算子</p><ul><li>a+&#x3D;b -&gt; a&#x3D;a+b</li></ul></li><li><p>インクリメント演算子</p><ul><li>a++</li><li>aに1を加える（くわえる）</li><li>a&#x3D;a+1</li></ul></li><li><p>デクリメント演算子</p></li><li><p>処理文</p><ul><li>int型に変換する <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> Integer.parseInt(args[<span class="hljs-number">0</span>]); <br></code></pre></td></tr></table></figure></li></ul></li><li><p>関係演算子<br>  -　a&gt;&#x3D;0 -&gt; aが0以上ならtrue</p><ul><li>大なりイコール（&gt;&#x3D;）（だいなりイコール）</li><li>小なり演算子 (&lt;) （しょうなり）</li></ul></li><li><p>論理演算子（ろんり）</p><ul><li>true&#x2F;false</li><li>論理積 (&amp;&amp;)かつ</li><li>論理和 (||)または</li><li>等価 (&#x3D;&#x3D;)</li><li>不等価 (!&#x3D;)</li></ul></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Learning</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>学习汇总｜Java講座-笔记03</title>
     <link href="/2022/09/17/Learning-05/"/>
     <url>/2022/09/17/Learning-05/</url>

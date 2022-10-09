@@ -16,22 +16,22 @@
   <meta name="author" content="Xiao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="学习汇总｜Java講座-笔记03多次元配列 多次元配列（たじげん・タジゲン）  123int[][] allScore &#x3D; new int[2][3];allScore[0][0] &#x3D; 10;allScore[0][1] &#x3D; 20;  1int[][] allScore &#x3D; &amp;#123;&amp;#123;10,20,30&amp;#125;,&amp;#123;40,50,60&amp;#125;&amp;#125;;   allSc">
+    <meta name="description" content="学习汇总｜Java講座-笔记04演算子 演算子（えんざんし）  足し算（たしざん）  引き算（ひきざん）  かけ算（かけざん）  アスタリスク (*)   割り算（わりざん）  スラッシュ（&#x2F;）   剰余算（じょうよざん）  パーセント ％ 余り（あまり）を計算 7％2＝1   identifier  識別子 しきべつし   代入演算子  a+&#x3D;b -&gt; a&#x3D;a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习汇总｜Java講座-笔记03">
-<meta property="og:url" content="http://xiaoblog.site/2022/09/17/Learning-05/index.html">
+<meta property="og:title" content="学习汇总｜Java講座-笔记04">
+<meta property="og:url" content="http://xiaoblog.site/2022/09/22/Learning-07/index.html">
 <meta property="og:site_name" content="Xiao Blog">
-<meta property="og:description" content="学习汇总｜Java講座-笔记03多次元配列 多次元配列（たじげん・タジゲン）  123int[][] allScore &#x3D; new int[2][3];allScore[0][0] &#x3D; 10;allScore[0][1] &#x3D; 20;  1int[][] allScore &#x3D; &amp;#123;&amp;#123;10,20,30&amp;#125;,&amp;#123;40,50,60&amp;#125;&amp;#125;;   allSc">
+<meta property="og:description" content="学习汇总｜Java講座-笔记04演算子 演算子（えんざんし）  足し算（たしざん）  引き算（ひきざん）  かけ算（かけざん）  アスタリスク (*)   割り算（わりざん）  スラッシュ（&#x2F;）   剰余算（じょうよざん）  パーセント ％ 余り（あまり）を計算 7％2＝1   identifier  識別子 しきべつし   代入演算子  a+&#x3D;b -&gt; a&#x3D;a">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-17T14:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-24T03:46:45.633Z">
+<meta property="article:published_time" content="2022-09-22T14:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-09T03:29:17.304Z">
 <meta property="article:author" content="Xiao">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>学习汇总｜Java講座-笔记03 - Xiao Blog</title>
+  <title>学习汇总｜Java講座-笔记04 - Xiao Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="学习汇总｜Java講座-笔记03"></span>
+            <span id="subtitle" data-typed-text="学习汇总｜Java講座-笔记04"></span>
           
         </div>
 
@@ -207,8 +207,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-17 22:00" pubdate>
-          September 17, 2022 pm
+        <time datetime="2022-09-22 22:00" pubdate>
+          September 22, 2022 pm
         </time>
       </span>
     
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          268 words
+          417 words
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          3 mins
+          4 mins
         
       </span>
     
@@ -268,24 +268,77 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">学习汇总｜Java講座-笔记03</h1>
+            <h1 style="display: none">学习汇总｜Java講座-笔记04</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="学习汇总｜Java講座-笔记03"><a href="#学习汇总｜Java講座-笔记03" class="headerlink" title="学习汇总｜Java講座-笔记03"></a>学习汇总｜Java講座-笔记03</h1><h2 id="多次元配列"><a href="#多次元配列" class="headerlink" title="多次元配列"></a>多次元配列</h2><ul>
-<li>多次元配列（たじげん・タジゲン）</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span>[][] allScore = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>];<br>allScore[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">10</span>;<br>allScore[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] = <span class="hljs-number">20</span>;<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span>[][] allScore = &#123;&#123;<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>&#125;,&#123;<span class="hljs-number">40</span>,<span class="hljs-number">50</span>,<span class="hljs-number">60</span>&#125;&#125;;<br></code></pre></td></tr></table></figure>
-
+                <h1 id="学习汇总｜Java講座-笔记04"><a href="#学习汇总｜Java講座-笔记04" class="headerlink" title="学习汇总｜Java講座-笔记04"></a>学习汇总｜Java講座-笔记04</h1><h2 id="演算子"><a href="#演算子" class="headerlink" title="演算子"></a>演算子</h2><ul>
+<li><p>演算子（えんざんし）</p>
+</li>
+<li><p>足し算（たしざん）</p>
+</li>
+<li><p>引き算（ひきざん）</p>
+</li>
+<li><p>かけ算（かけざん）</p>
 <ul>
-<li>allScore.length &#x3D; 2</li>
-<li>allScore[0].length &#x3D; 3</li>
-<li>&#x2F; : スラッシュ・slash</li>
-<li>＊ : アスタリスク・asterisk</li>
-<li>囲んで・囲む・かこむ</li>
+<li>アスタリスク</li>
+<li>(*)</li>
+</ul>
+</li>
+<li><p>割り算（わりざん）</p>
+<ul>
+<li>スラッシュ（&#x2F;）</li>
+</ul>
+</li>
+<li><p>剰余算（じょうよざん）</p>
+<ul>
+<li>パーセント</li>
+<li>％</li>
+<li>余り（あまり）を計算</li>
+<li>7％2＝1</li>
+</ul>
+</li>
+<li><p>identifier</p>
+<ul>
+<li>識別子</li>
+<li>しきべつし</li>
+</ul>
+</li>
+<li><p>代入演算子</p>
+<ul>
+<li>a+&#x3D;b -&gt; a&#x3D;a+b</li>
+</ul>
+</li>
+<li><p>インクリメント演算子</p>
+<ul>
+<li>a++</li>
+<li>aに1を加える（くわえる）</li>
+<li>a&#x3D;a+1</li>
+</ul>
+</li>
+<li><p>デクリメント演算子</p>
+</li>
+<li><p>処理文</p>
+<ul>
+<li>int型に変換する <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> Integer.parseInt(args[<span class="hljs-number">0</span>]); <br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>関係演算子<br>  -　a&gt;&#x3D;0 -&gt; aが0以上ならtrue</p>
+<ul>
+<li>大なりイコール（&gt;&#x3D;）（だいなりイコール）</li>
+<li>小なり演算子 (&lt;) （しょうなり）</li>
+</ul>
+</li>
+<li><p>論理演算子（ろんり）</p>
+<ul>
+<li>true&#x2F;false</li>
+<li>論理積 (&amp;&amp;)かつ</li>
+<li>論理和 (||)または</li>
+<li>等価 (&#x3D;&#x3D;)</li>
+<li>不等価 (!&#x3D;)</li>
+</ul>
+</li>
 </ul>
 
                 
@@ -332,8 +385,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>学习汇总｜Java講座-笔记03</div>
-      <div>http://xiaoblog.site/2022/09/17/Learning-05/</div>
+      <div>学习汇总｜Java講座-笔记04</div>
+      <div>http://xiaoblog.site/2022/09/22/Learning-07/</div>
     </div>
     <div class="license-meta">
       
@@ -345,7 +398,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 17, 2022</div>
+          <div>September 22, 2022</div>
         </div>
       
       
@@ -387,9 +440,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/22/Learning-07/" title="学习汇总｜Java講座-笔记04">
+                      <a href="/2022/09/23/Learning-06/" title="学习汇总｜GitHub部署React并自定义域名">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">学习汇总｜Java講座-笔记04</span>
+                        <span class="hidden-mobile">学习汇总｜GitHub部署React并自定义域名</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -397,8 +450,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/16/Learning-04/" title="学习汇总｜Java講座-笔记02">
-                        <span class="hidden-mobile">学习汇总｜Java講座-笔记02</span>
+                      <a href="/2022/09/17/Learning-05/" title="学习汇总｜Java講座-笔记03">
+                        <span class="hidden-mobile">学习汇总｜Java講座-笔记03</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
