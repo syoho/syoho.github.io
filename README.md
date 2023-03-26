@@ -1,5 +1,7 @@
 # Personal Blog
 
+![image](https://raw.githubusercontent.com/syoho/github-image/main/blog/xiaoblog.jpg)
+
 ## Introduction
 
 This project is a personal blog website built with Hexo and Fluid. It provides a simple and customizable interface for creating and sharing articles and posts.
