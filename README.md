@@ -1,6 +1,6 @@
 # Personal Blog
 
-![image](https://raw.githubusercontent.com/syoho/github-image/main/blog/xiaoblog.jpg)
+![image](https://raw.githubusercontent.com/syoho/github-image/main/blog/xiaoblog.jpeg)
 
 ## Introduction
 
